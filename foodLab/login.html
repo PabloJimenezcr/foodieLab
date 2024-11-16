@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Foodie Lab | Iniciar sesión</title>
+</head>
+
+<body>
+
+    <body>
+
+        <section class="login">
+            <div class="container">
+                <input type="checkbox" id="flip">
+                <div class="cover">
+                    <div class="front">
+                        <img src="img/login.jpg" alt="Foto persona sosteniendo un celular y comiendo">
+                        <div class="text">
+                            <p class="text-1">Inicia sesión para comenzar a</p>
+                            <p class="text-2">ordenar tus platillos favoritos</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img class="backImg" src="img/register.jpg" alt="Foto persona sosteniendo un celular y comiendo">
+                        <div class="text">
+                            <p>Regístrate para comenzar a</p>
+                            <p>ordenar tus platillos favoritos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forms">
+                    <div class="form-content">
+                        <div class="login-form">
+                            <h3>Iniciar sesión</h3>
+                            <form action="" method="POST">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <i class="ri-mail-line"></i>
+                                        <input name="email" type="text" placeholder="Ingresa tu email">
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="ri-lock-line"></i>
+                                        <input name="pass" type="password" placeholder="Ingresa tu contraseña">
+                                    </div>
+                                    <div class="button input-box">
+                                        <input name="submit" type="submit" value="Ingresar">
+                                    </div>
+                                    <div class="text sign-up-text">¿No tienes cuenta?<label for="flip"> Regístrate
+                                            ahora</label></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup-form">
+                            <h3>Registro</h3>
+                            <form action="" enctype="multipart/form-data" method="POST">
+                                <div class="input-boxes">
+                                    <div class="imageUploadContainer">
+                                        <figure class="imagePreview">
+                                            <img src="img/user.png" class="img-fluid" id="chosen-image">
+                                            <figcaption id="file-name"></figcaption>
+                                        </figure>
+
+                                        <label class="labelPhoto" for="foto">
+                                            <i class="ri-camera-line"></i>
+                                            <input type="file" id="foto" name="image" accept="image/jpg, image/jpeg, image/png">
+                                        </label>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="ri-user-line"></i>
+                                        <input name="nameRegister" type="text" placeholder="Ingresa tu nombre">
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="ri-mail-line"></i>
+                                        <input name="emailRegister" type="text" placeholder="Ingresa tu email">
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="ri-lock-line"></i>
+                                        <input name="passR" type="password" placeholder="Ingresa una contraseña">
+                                        <i class="ri-eye-line showPassword"></i>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="ri-lock-line"></i>
+                                        <input name="cPass" type="password" placeholder="Confirma tu contraseña">
+                                        <i class="ri-eye-line showPassword"></i>
+                                    </div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Registrarse" name="submitR">
+                                    </div>
+                                    <div class="text sign-up-text">¿Ya tienes cuenta? <label for="flip">
+                                            Inicia sesión ahora</label></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="img/hoja2.png" alt="Hoja decorativa" class="img-fluid shape shape1">
+            <img src="img/hoja1.png" alt="Hoja decorativa" class="img-fluid shape shape2">
+        </section>
+
+
+        <script src="js/photoChange.js"></script>
+        <script src="js/pass.js"></script>
+    </body>
+
+</html>

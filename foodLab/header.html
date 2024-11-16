@@ -1,0 +1,172 @@
+
+<header id="header" class="header fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo.png" alt="Logo foodie lab" class="img-fluid">
+            </a>
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul class="ulMenu">
+                <li><a class="nav-link scrollto" href="home.html">Inicio</a></li>
+                <li><a class="nav-link scrollto" href="home.html">Menú</a></li>
+                <li><a class="nav-link scrollto" href="ordenes.html">Ordenes</a></li>
+                <li><a class="nav-link scrollto" href="contacto.html">Contacto</a></li>
+                <li> <a href="favoritos.html" class="scrollto"><i class="ri-heart-line iconRight"></i> Favoritos</a>
+                </li>
+               
+                <div class="counterCar"></div>
+                <li><a class="scrollto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="sidebar mi carrito">
+                        <i class="ri-shopping-cart-line iconRight"></i> Carrito
+                    </a>
+                </li>
+                <div class="counterCar"></div>
+            </ul>
+        </nav>
+
+        <div class="navbar d-flex">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/user.png" class="img-fluid" alt="Foto perfil">
+                </a>
+                <ul class="dropdown-menu">
+                    <img src="img/user.png" class="img-fluid mb-3" alt="Foto perfil">
+                    <h3>Usuario</h3>
+                    <div class="d-flex justify-content-center align-items-center pb-3">
+                        <a href="perfil.html" class="btnDropdown">Perfil</a>
+                        <a href="login.html" class="btnDropdown">Cerrar sesión</a>
+                    </div>
+                </ul>
+            </li>
+        </div>
+        <i class="ri-menu-3-fill iconHamburguer" data-bs-toggle="offcanvas" data-bs-target="#menuResponsive" aria-controls="menuResponsive"></i>
+    </div>
+</header>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mi carrito</h5>
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col-lg-4 pb-4">
+                        <form action="" method="POST">
+                            <div class="box">
+                                <img src="img/pizza.jpeg" alt="Foto platillo" class="img-fluid">
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="col-lg-8">
+                        <div class="price pt-3">
+                            <h3>Pizza</h3>
+                            <p>₡5000</p>
+                            <input type="hidden" name="cart_id">
+                        </div>
+
+                        <form action="" method="POST" class="formStore">
+                            <input type="hidden" name="cart_id[]">
+
+                            <a href="#" class="less">
+                                <i class="ri-subtract-line"></i>
+                            </a>
+
+                            <input class="myInputStepper" type="number" min="1" max="100" step="1">
+
+
+
+                            <a href="#" class="more">
+                                <i class="ri-add-line"></i>
+                            </a>
+
+
+                            <a class="delete" href="#">
+                                <i class="ri-delete-bin-line"></i>
+                            </a>
+                            <input type="submit" value="Actualizar" name="update_qty" class="updateBtn">
+
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+
+        <div class="d-flex justify-content-between fw-semibold pb-3">
+            <p>Total :</p>
+            <p>₡5000</p>
+        </div>
+        </form>
+
+        <div class="line mb-4"></div>
+
+
+
+        <div class="d-flex text-center mb-4">
+            <a class="#">Continuar</a>
+        </div>
+
+        <div class="d-flex text-center">
+            <a href="#">Eliminar carrito</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="offcanvas offcanvas-start offcanvasResponsive" data-bs-scroll="true" tabindex="-1" id="menuResponsive" aria-labelledby="menu">
+    <div class="offcanvas-header">
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="text-center mb-5">
+            <img src="img/user.png" class="img-fluid mb-3 imgPerfil" alt="Foto perfil">
+            <h4>Usuario</h4>
+
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" href="home.html">Inicio</a></li>
+                <li><a class="nav-link scrollto" href="perfil.html">Perfil</a></li>
+                <li>
+                    <a href="favoritos.html" class="nav-link scrollto">
+                        Favoritos <div class="counterCar"></div>
+                    </a>
+                </li>
+
+                <li><a class="nav-link scrollto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="sidebar mi carrito">
+                        Carrito <div class="counterCar"></div>
+                    </a>
+                </li>
+
+                <li><a class="nav-link scrollto" href="home.html">Menú</a></li>
+                <li><a class="nav-link scrollto" href="ordenes.html">Ordenes</a></li>
+                <li><a class="nav-link scrollto" href="contacto.html">Contacto</a></li>
+                <li><a class="nav-link scrollto contact" href="login.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+        <div class="text-center pt-4">
+            <h3>Visítanos</h3>
+            <p>FoodLab, San José</p>
+            <p>Santa Ana, Costa Rica</p>
+            <p>Horario: 8am - 11pm</p>
+
+            <a href="tel:+50622547545">
+                <span>+506 2254-7545</span>
+            </a>
+        </div>
+
+        <div class="text-center pt-4">
+            <h3>Reservas</h3>
+            <a href="mailto:foodielab@hotmail.com">
+                <span class="span">foodielab@hotmail.com</span>
+            </a>
+        </div>
+    </div>
+</div>
